@@ -1,4 +1,4 @@
-﻿using System.Text;
+using System.Text;
 
 void Task1()
 {
@@ -31,12 +31,21 @@ void Task2()
 
     if (Number >= 100 && Number < 1000)
     {
-
-        int Num1 = Number / 100 % 10;
-        int Num2 = Number / 10 % 10;
+        int Num1 = Number / 100;
+        int Num2 = Number / 10 %10;
         int Num3 = Number % 10;
-
-        Console.WriteLine(Num1 != Num2 && Num2 != Num3);
+        if(num1==num2==num3){
+            Console.WriteLine("Butun reqemler beraberdir")
+        }
+        else if(num1==num2){
+            Console.WriteLine("Birinci ve ikinci reqem beraberdir")
+        }
+        else if(num2==num3){
+            Console.WriteLine("Ikinci ve Ucuncu reqem beraberdir")
+        }
+        else if(num1=num3){
+            Console.WriteLine("Birinci ve Ucuncu reqem beraberdir")
+        }
     }
     else
     {
@@ -99,5 +108,3 @@ Task1();
 Task2();
 Task3();
 Task4();
-
-
