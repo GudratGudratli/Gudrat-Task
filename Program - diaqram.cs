@@ -101,6 +101,8 @@ void Task4()
         case "febrary":
             Console.WriteLine("28");
             break;
+        default:
+            System.Console.WriteLine("Wrong input");
     }
 }
 
